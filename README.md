@@ -25,6 +25,7 @@ iOS library for stack image scroll view cool animation.
     stackView.delegate = self;
     
     for (int index = 0; index < 6; index++) {
+    
         [stackView addImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",index]]];
     }
     
