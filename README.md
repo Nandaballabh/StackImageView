@@ -12,27 +12,27 @@ iOS library for stack image scroll view cool animation.
  2. Add imageview as bellow :
    
 
-    CGRect rect = {{20,40},{260,340}};
+         CGRect rect = {{20,40},{260,340}};
 
 
-    NBStackScrollImageView *stackView = [[NBStackScrollImageView alloc]initWithFrame:rect ZMarginValue:5 XMarginValue:10 AngleValue:0.0 Alpha:1000];
+         NBStackScrollImageView *stackView = [[NBStackScrollImageView alloc]initWithFrame:rect ZMarginValue:5 XMarginValue:10 AngleValue:0.0 Alpha:1000];
 
 
-    stackView.stackPostion = StackPositionRight;
+        stackView.stackPostion = StackPositionRight;
     
-    stackView.borderColor = [UIColor whiteColor];
+        stackView.borderColor = [UIColor whiteColor];
     
-    stackView.delegate = self;
+        stackView.delegate = self;
     
-    for (int index = 0; index < 6; index++) {
+        for (int index = 0; index < 6; index++) {
     
         [stackView addImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",index]]];
-    }
+        
     
-    [self.view addSubview:stackView];
+        [self.view addSubview:stackView];
     
-    [stackView setImageShadowsWtihDirectionX:2 Y:2 Alpha:0.7];
+        [stackView setImageShadowsWtihDirectionX:2 Y:2 Alpha:0.7];
     
-    [stackView reLoadUIview];
+        [stackView reLoadUIview];
 
 
